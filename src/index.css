@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-secondary md:text-[22px] text-secondary text-[18px];
+    scroll-behavior: smooth;
+}
+
+a {
+    @apply text-[20px] hover:text-accent transition-all duration-300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-primary text-primary
+}
+
+.btn {
+    @apply h-[45px] lg:h-[50px] xl:h-[65px] px-[15px] lg:px-[20px] xl:px-[30px] transition-all duration-300 text-white xl:rounded-[18px] rounded-[11px] flex items-center gap-2 text-[20px];
+}
+
+.btn-primary {
+    @apply bg-primary hover:bg-primary-hover
+}
+
+.btn-accent {
+    @apply text-accent hover:bg-accent-hover
+}
+
+@media (max-width:567px) {
+    p {
+        @apply w-[85%] m-auto text-center
+    }
+  
+}
+
+#about::before {
+    content: "";
+    display: block;
+    height: 160px; /* Adjust according to your header height */
+    margin-top: -160px; /* Adjust according to your header height */
+    visibility: hidden;
+}
+#testimonials::before {
+    content: "";
+    display: block;
+    height: 150px; /* Adjust according to your header height */
+    margin-top: -150px; /* Adjust according to your header height */
+    visibility: hidden;
+}
+#work::before {
+    content: "";
+    display: block;
+    height: 95px; /* Adjust according to your header height */
+    margin-top: -95px; /* Adjust according to your header height */
+    visibility: hidden;
+}
+#contact::before {
+    content: "";
+    display: block;
+    height: 95px; /* Adjust according to your header height */
+    margin-top: -95px; /* Adjust according to your header height */
+    visibility: hidden;
+}
