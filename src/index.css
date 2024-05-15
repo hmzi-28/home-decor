@@ -35,7 +35,7 @@ h6 {
 
 @media (max-width:567px) {
     p {
-        @apply w-[85%] m-auto text-center
+         m-auto text-center
     }
   
 }

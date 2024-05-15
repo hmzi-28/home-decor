@@ -14,7 +14,7 @@ import Rights from '../Components/Rights'
 const Pages = () => {
   return (
     <div className="max-w-[1920px] mx-auto overflow-hidden">
-    <Navbar />
+    {/* <Navbar /> */}
     <Header />
     <Hero />
     <Grids />
