@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { IoChevronForward } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
@@ -35,16 +34,10 @@ const Contact = () => {
     return Object.keys(formErrors).length === 0;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      try {
-        await axios.post('http://localhost:3000/contact', formData);
-        setIsSubmitted(true);
-        console.log('Form submitted successfully:', formData);
-      } catch (error) {
-        console.error('Error submitting form:', error);
-      }
+      setIsSubmitted(true);
     }
   };
 
